@@ -1,0 +1,95 @@
+/*le quitamos el margin y padding a todos los elementos*/
+* {
+    margin:0; /*distancia desde el borde del elemento hasta otros elementos*/
+    padding: 0; /*espacio de relleno desde el borde del elemento hasta el contenido*/
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181419;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+   /* overflow: auto;*/
+}
+
+#banner {
+   height: 80vh; /*queremos tener de alto el 80 del alto del navegador*/
+    /*width: 50vw; ancho*/
+   /* max-width: 700px;*/
+    background-image: url("../img/banner-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+
+nav {
+    height: 10vh; /*queremos tener de alto el 20 del alto del navegador*/
+    background-color: #db4648;
+    display:flex;
+    justify-content: space-between; /*con respecto al eje principal que es la fila(horizontal)*/ 
+    align-items: center; /*con respecto al eje secundario que es la columna(vertical)*/
+    
+    padding: 0px 50px;
+}
+
+#nav-links {
+    display: flex;
+    /*ubicamos los li*/
+    gap: 30px; /*defino el tamaño de los huecos entre los items*/
+
+    list-style: none;
+
+}
+
+#nav-links li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*seccion banner*/
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/*seccion busqueda*/
+
+#busqueda {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /*cambio el eje principal para que sea el vertical*/
+    /*el eje secundario por consiguiente sera el eje horizontal*/
+
+    justify-content: center; /*con respecto al eje vertical*/
+    align-items: center; /*con respecto al eje horizontal*/
+}
+
+
+/*seccion tendencias*/
+
+#tendencias {
+    height: 100vh;
+}
+
+
+.movies-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.movie-item-img {
+    width:200px;
+}

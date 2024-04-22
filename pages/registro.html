@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro- CAC MOVIES</title>
+</head>
+
+<body>
+    <header>
+        <h1>CAC-Movies</h1>
+    </header>
+    <main>
+        <h3>Registrate</h3>
+        <!--
+                ¡OJO! 
+            action -> donde iran mis datos
+        -->
+        <form action="#" method="post">
+            <!-- elementos de mi formulario-->
+            <div>
+                <label for="nombreUsuario">Nombre</label>
+                <input type="text" id="nombreUsuario" name="nombreUsuarioIngresado">
+            </div>
+            <div>
+                <label for="apellidoUsuario">Apellido</label>
+                <input type="text" id="apellidoUsuario" name="apellidoUsuarioIngresado">
+            </div>
+            <div>
+                <label for="emailUsuario">Correo electronico</label>
+                <input type="email" id="emailUsuario" name="emailUsuarioIngresado">
+            </div>
+            <div>
+                <label for="contraseñaUsuario">Contraseña</label>
+                <input type="password" id="contraseñaUsuario" name="contraseñaUsuarioIngresado" minlength="6" maxlength="12">
+            </div>
+            <div>
+                <label for="nacimientoUsuario">Fecha de Nacimiento</label>
+                <input type="date" id="nacimientoUsuario" name="nacimientoUsuarioIngresado">
+            </div>
+            <div>
+                <label for="paisUsuario">Pais de residencia</label>
+                <select id="paisUsuario" name="paisUsuarioIngresado">
+                    <option value=""selected>--Seleccione un pais ---</option>
+                    <option value="AR">Argentina</option>
+                    <option value="CO">Colombia</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" id="terminos" name="terminosCondiciones" value="1">
+                <label for="terminos">Acepto términos y condiciones</label>
+            </div>
+
+            <input type="submit" value="REGISTRARSE">
+        </form>
+    </main>
+</body>
+
+</html>
